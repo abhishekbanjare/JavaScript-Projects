@@ -1,0 +1,231 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* padding: 12px 16px; */
+  padding:10px;
+  color: #ffffff;
+  background-color: rgb(14, 37, 37);
+}
+.navigation{
+
+  padding:25px;
+  margin:0px 1px 1px 1px;
+  border:1px solid black;
+  border-radius: 0px 0px 5px 5px ;
+  box-shadow: 8px 8px 28px #000;
+
+
+}
+.navigation #nav-content:hover{
+  color:rgb(218, 100, 100);
+}
+.logo {
+  flex: 1;
+  font-weight: bold;
+  font-size:x-large;
+  cursor:pointer;
+}
+nav ul {
+  flex: 1;
+  display: flex;
+  justify-content: space-evenly;
+  font-weight: bold;
+  font-size:x-large;
+}
+nav ul li {
+  list-style-type: none;
+  cursor:pointer;
+
+}
+main {
+  padding: 1rem;
+  width: 100%;
+  background-color: #fff;
+}
+.movie-holder {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 columns in each row */
+  gap: 10px; /* Adjust the gap between images as needed */
+  /* ................... */
+  /* border:3px solid black; */
+  /* display: flex; */
+  /* justify-content: space-between; */
+  align-items: center;
+  gap: 1rem;
+}
+.movie-holder a {
+  flex: 1;
+}
+.movie-holder h4 {
+  padding:3px;
+  margin: 3px;
+  font-size:larger;
+  color:black;
+  text-align:center;
+  font-weight: bold;
+  text-decoration: none;
+}
+#loader {
+  position: relative;
+  height: 60px;
+  width: 60px;
+  display: grid;
+  place-content: center;
+  border-radius: 50%;
+  border: 10px solid #ccc;
+}
+
+.movie-img-wrapper {
+  height: 400px;
+  /* width: 300px; */
+  background-color: #607d8b;
+  background-size: cover;
+  transition: all 0.8s ease;
+  border-radius: 8px 8px 0px 0px;
+  /* ............... */
+  
+}
+.movie{
+  /* border:1px solid rgb(11, 209, 223); */
+  /* border-radius: 8px; */
+  background-color: #fff;
+}
+#booker {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+#booker-grid-holder {
+  display: grid;
+  grid-template-columns: repeat(2, 200px);
+  gap: 2rem;
+}
+.booking-grid {
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-gap: 0.5rem;
+  height: 150px;
+  width: 200px;
+  color: #fff;
+  font-weight: 600;
+}
+#confirm-purchase {
+  display: grid;
+  place-items: center;
+  font-size: 1.2rem;
+}
+#booking-grid-undefined {
+  font-size: auto;
+}
+.seat {
+  display: grid;
+  place-content: center;
+  /* background-color: pink; */
+}
+.available-seat {
+  background-color: green;
+}
+.unavailable-seat {
+  background-color: red;
+}
+.select-seat {
+  border: 4px outset rgb(0, 0, 0);
+}
+
+.d-none {
+  display: none;
+}
+.v-none {
+  visibility: hidden;
+}
+button[type="submit"] {
+  width: 200px;
+  height: 35px;
+  padding: 0.5rem;
+}
+.movie-link{
+  border-radius: 8px;
+  /* border-radius: 20px 30px 40px 10px; */
+  box-shadow: 8px 8px 8px #07070780;
+  margin:5px;
+
+  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+  /* overflow: hidden; */
+}
+/* .movie h4{
+  color:red;
+  text-decoration: none;
+} */
+.movie-link h4 {
+  text-decoration: none;
+}
+
+#book-ticket-btn{
+ background-color:#000;
+ margin:10px;
+ padding:10px;
+ font-size:medium;
+ font-weight: bold;
+ border:none;
+ color:white;
+ border-radius:3px;
+
+}
+#book-ticket-btn:hover{
+  background-color:brown ;
+}
+
+#booker{
+ margin-bottom: 50px;
+}
+/* ............................... */
+#email{
+  padding:8px;
+  margin:2px;
+  /* background-color: rgb(211, 200, 200); */
+  background-color: #ccc;
+  border-radius: 2px;
+  border:none;
+  font-size: medium;
+  
+}
+#phone{
+  padding:8px;
+  margin:2px;
+  background-color: #ccc;
+  border-radius: 2px;
+  border:none;
+  font-size: medium;
+
+
+
+}
+#submitBtn{
+  padding:8px;
+  margin:2px;
+  background-color: #3b3333;
+  color:#ffffff;
+  border-radius: 2px;
+  border:none;
+  font-size: medium;
+  font-weight: bold;
+  width: 210px;;
+
+}
+#submitBtn:hover{
+  background-color: #000;
+}
+#confirm-purchase{
+  /* justify-content: center; */
+
+}
